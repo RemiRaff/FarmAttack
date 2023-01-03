@@ -7,10 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     // speed of farmer
     public float speed = 2000.0f;
+    public float bound = 15.0f; // right and left boundary pour un champ non su=ymétrique
 
     private Rigidbody _rb;
-    private float movementX;
-    private float movementY;
 
     // Start is called before the first frame update
     void Awake()
@@ -21,12 +20,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Keep the player in the field (with bound value)
+        // mieux dans Update que dans le OnMove
+        if (_rb.position.x <= -bound)
+        {
+            _rb.position = new Vector3(-bound, _rb.position.y, _rb.position.z);
+        } else if (bound <= _rb.position.x)
+        {
+            _rb.position = new Vector3(bound, _rb.position.y, _rb.position.z);
+        }
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
-        // Debug.Log("Move");
+        // peut être fait avec un Axis(float) plutot qu'un Vector2 dans le PlayerAction
         _rb.velocity = new Vector2(ctx.ReadValue<Vector2>().x, 0) * speed * Time.deltaTime;
     }
 
