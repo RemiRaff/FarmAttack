@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     // speed of farmer
     public float speed = 2000.0f;
     public float bound = 15.0f; // right and left boundary pour un champ non su=ymétrique
+    public GameObject projectilePrefab;
+    public Vector3 projectilePrefabPosition;
 
     private Rigidbody _rb;
 
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnFire(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Fire");
+        // Debug.Log("Fire");
+        Instantiate(projectilePrefab, new Vector3(_rb.position.x-1.1f, _rb.position.y+2, _rb.position.z+1), projectilePrefab.transform.rotation);
     }
 }
