@@ -5,7 +5,9 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
-    public int animalIndex;
+
+    private float spawnRangeX = 10.0f;
+    private float spawnPosZ = 35.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +23,9 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnAnimal()
     {
+        int animalIndex = Random.Range(0, animalPrefabs.Length);
         Instantiate(animalPrefabs[animalIndex],
-            new Vector3(0, 0, 30),
+            new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ),
             animalPrefabs[animalIndex].transform.rotation);
     }
 }
