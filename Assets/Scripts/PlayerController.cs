@@ -24,13 +24,13 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    void OnMove(InputValue movementValue)
+    public void OnMove(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Move");
-        _rb.velocity = new Vector2(movementValue.Get<Vector2>().x, 0) * speed * Time.deltaTime;
+        // Debug.Log("Move");
+        _rb.velocity = new Vector2(ctx.ReadValue<Vector2>().x, 0) * speed * Time.deltaTime;
     }
 
-    void OnFire()
+    public void OnFire(InputAction.CallbackContext ctx)
     {
         Debug.Log("Fire");
     }
