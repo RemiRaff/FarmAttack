@@ -19,7 +19,7 @@ public class DetectCollisions : MonoBehaviour
     // TODO OnCollisionEnter ne fonctionne pas, pourquoi?
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger Collision detected...");
+        // Debug.Log("Trigger Collision detected...");
         Destroy(gameObject);
         Destroy(other.gameObject);
     }
