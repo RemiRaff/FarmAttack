@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6880321017694524497}
   - component: {fileID: 6880321017694524496}
   - component: {fileID: 3213214361172512904}
+  - component: {fileID: 8291325761741969150}
+  - component: {fileID: -5673978204915322152}
   m_Layer: 0
   m_Name: Poussin
   m_TagString: Untagged
@@ -57,6 +59,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 227a539558ec70c438ce619624d1b656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &8291325761741969150
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6880321017694524495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8229251, y: 1.0462865, z: 1.3312979}
+  m_Center: {x: -0.026972428, y: 0.4995801, z: 0.053101182}
+--- !u!114 &-5673978204915322152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6880321017694524495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9670f6982b1ebbf4aadda9074d0160d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &6880321018268249272

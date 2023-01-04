@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8386634932333837717}
   - component: {fileID: 8386634932333837716}
   - component: {fileID: 945745303371097650}
+  - component: {fileID: -4220452408378334083}
+  - component: {fileID: -8913855430491304884}
   m_Layer: 0
   m_Name: PouleBlanche
   m_TagString: Untagged
@@ -57,6 +59,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 227a539558ec70c438ce619624d1b656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &-4220452408378334083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386634932333837719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1335335, y: 1.8227025, z: 2.2024221}
+  m_Center: {x: 0.015332818, y: 0.8031071, z: 0.107949615}
+--- !u!114 &-8913855430491304884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386634932333837719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9670f6982b1ebbf4aadda9074d0160d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8386634932026407921

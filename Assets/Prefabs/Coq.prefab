@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7203651427165090761}
   - component: {fileID: 7203651427165090760}
   - component: {fileID: 5053902159950925357}
+  - component: {fileID: 228056852282155809}
+  - component: {fileID: 5202921012509794590}
   m_Layer: 0
   m_Name: Coq
   m_TagString: Untagged
@@ -57,6 +59,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 227a539558ec70c438ce619624d1b656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &228056852282155809
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203651427165090763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0993232, y: 2.4146593, z: 2.7281895}
+  m_Center: {x: 0.0014837384, y: 1.1247729, z: -0.10206509}
+--- !u!114 &5202921012509794590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203651427165090763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9670f6982b1ebbf4aadda9074d0160d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &7203651425294078193

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5532645588303116468}
   - component: {fileID: 5532645588303116475}
   - component: {fileID: 8425250254620920937}
+  - component: {fileID: 1626997345736508224}
+  - component: {fileID: -4866120550975973089}
   m_Layer: 0
   m_Name: Poule
   m_TagString: Untagged
@@ -57,6 +59,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 227a539558ec70c438ce619624d1b656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1626997345736508224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532645588303116474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1604939, y: 1.8966447, z: 2.1837268}
+  m_Center: {x: 0.00725019, y: 0.8152756, z: 0.124218464}
+--- !u!114 &-4866120550975973089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532645588303116474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9670f6982b1ebbf4aadda9074d0160d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &5532645588035066636
