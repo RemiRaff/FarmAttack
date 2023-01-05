@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     // speed of farmer
     public float speed = 2000.0f;
-    public float bound = 15.0f; // right and left boundary pour un champ non su=ymétrique
-    public GameObject projectilePrefab;
+    public float bound = 15.0f; // right and left boundary pour un champ non symétrique
+    public GameObject projectilePrefab; // pizza à lancer
     public Vector3 projectilePrefabPosition;
 
     private Rigidbody _rb;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         // Keep the player in the field (with bound value)
         // mieux dans Update que dans le OnMove
-        if (_rb.position.x <= -bound)
+        if (_rb.position.x <= -bound) // velocity et add force autre façon de générer du mouvement avec rigidbody
         {
             _rb.position = new Vector3(-bound, _rb.position.y, _rb.position.z);
         } else if (bound <= _rb.position.x)
@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Pour créer des blocs #region <region name> ... #endregion
     public void OnMove(InputAction.CallbackContext ctx)
     {
         // peut être fait avec un Axis(float) plutot qu'un Vector2 dans le PlayerAction
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
     public void OnFire(InputAction.CallbackContext ctx)
     {
         // Debug.Log("Fire");
-        if (ctx.started)
+        if (ctx.started) // performed, canceled
         {
             Instantiate(projectilePrefab, new Vector3(_rb.position.x, _rb.position.y + 0.25f, _rb.position.z + 1), projectilePrefab.transform.rotation);
         }
