@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour
     public void OnFire(InputAction.CallbackContext ctx)
     {
         // Debug.Log("Fire");
-        Instantiate(projectilePrefab, new Vector3(_rb.position.x, _rb.position.y+0.25f, _rb.position.z+1), projectilePrefab.transform.rotation);
+        if (ctx.started)
+        {
+            Instantiate(projectilePrefab, new Vector3(_rb.position.x, _rb.position.y + 0.25f, _rb.position.z + 1), projectilePrefab.transform.rotation);
+        }
     }
 }

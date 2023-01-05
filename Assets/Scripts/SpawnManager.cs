@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -28,9 +29,12 @@ public class SpawnManager : MonoBehaviour
     }
 
     // call on 's' key pressed, can link directly SpawnRandomAnimal to unity event
-    public void SpawnAnimal()
+    public void SpawnAnimal(InputAction.CallbackContext ctx)
     {
-        SpawnRandomAnimal();
+        if (ctx.started)
+        {
+            SpawnRandomAnimal();
+        }
     }
 
     private void SpawnRandomAnimal()
